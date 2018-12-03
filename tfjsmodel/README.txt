@@ -1,1 +1,1 @@
-# This is the neural network.
+This is the neural network
