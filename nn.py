@@ -34,6 +34,6 @@ model.fit(x_train, y_train, epochs=20, batch_size=128)
 
 score = model.evaluate(x_test, y_test, batch_size=128)
 print(score)
-model.save("Keras-64x2-10epoch")
+model.save("KerasNN")
 
 tfjs.converters.save_keras_model(model, "tfjsmodel")
