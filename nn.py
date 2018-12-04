@@ -17,11 +17,11 @@ y_test = ys[-10000:]
 
 model = Sequential()
 model.add(Dense(48, activation='relu', input_dim=6))
-model.add(Dropout(0.5))
+model.add(Dropout(0.2))
 model.add(Dense(32, activation='relu'))
-model.add(Dropout(0.5))
+model.add(Dropout(0.2))
 model.add(Dense(32, activation='relu'))
-model.add(Dropout(0.5))
+model.add(Dropout(0.2))
 model.add(Dense(3, activation='softmax'))
 
 adam = keras.optimizers.Adam(lr=0.001)
